@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AndroidMVVM</string>
+    <string name="player1_hint">Jugador 1</string>
+    <string name="player2_hint">Jugador 2</string>
+    <string name="game_dialog_title">Nuevo Juego</string>
+    <string name="done">Aceptar</string>
+    <string name="game_dialog_empty_name">Los nombres no pueden estar vacios</string>
+    <string name="game_dialog_same_names">Los nombres no pueden ser iguales</string>
+    <string name="game_end_dialog_headline">El ganador es</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -35,11 +35,11 @@ public class Game {
 
     public boolean hasThreeSameHorizontalCells() {
         try {
-            for (int i = 0; i < BOARD_SIZE; i++){
-                if (areEqual(cells[i][0],cells[i][1],cells[i][2])){
+            for (int i = 0; i < BOARD_SIZE; i++)
+                if (areEqual(cells[i][0],cells[i][1],cells[i][2]))
                     return true;
-                }
-            }
+
+
 
             return false;
         } catch (NullPointerException e){
@@ -93,20 +93,17 @@ public class Game {
      * @return
      */
     private boolean areEqual(Cell... cells){
-        if (cells == null || cells.length == 0){
+        if (cells == null || cells.length == 0)
             return false;
-        }
 
         for (Cell cell : cells)
             if (cell == null || cell.player.value == null || cell.player.value.length() == 0)
                 return false;
 
-
         Cell comparisonBase = cells[0];
-        for (int i = 1; i < cells.length;i++)
-            if (!comparisonBase.player.equals(cells[i].player.value))
+        for (int i = 1; i < cells.length; i++)
+            if (!comparisonBase.player.value.equals(cells[i].player.value))
                 return false;
-
 
         return true;
     }
